@@ -14,7 +14,7 @@ with open ('example.csv', 'rb') as csvfile:
 
 
 writer.close()
-reader = DataFileReader(open("users.avro", "rb"), DatumReader())
+reader = DataFileReader(open("resultFile.avro", "rb"), DatumReader())
 for user in reader:
     print(user)
 
